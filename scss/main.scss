@@ -1,0 +1,31 @@
+$primary-color:#FFF7D6;
+$secundary-color:#CFC189;
+$tertiary-color:#CBE59E ;
+$primary-text-color:#7C4904;
+$secondary-text-color-icons:#ffffff;
+$details-color-other: #FFC300;
+$font-primary: 'IBM Plex Sans' , sans-serif;
+$font-secondary: 'Raleway', sans-serif;
+
+body {
+    margin: 0;
+    padding: 0; 
+
+}
+
+.navbar {
+    background-color: $primary-color;
+    width: 100%;
+    height: 300px;
+}
+
+main {
+    background-color: $primary-color;
+    width: 100%;
+}
+
+.footer {
+    background-color: $details-color-other;
+    width: 100%;
+    height: 250px;
+}
