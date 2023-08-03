@@ -1,5 +1,5 @@
 $primary-color:#FFF7D6;
-$secundary-color:#cabf95;
+$secundary-color:#e2cb6d;
 $tertiary-color:#b3c98a ;
 $primary-text-color:#555A32;
 $secondary-text-color-icons:#ffffff;
@@ -150,7 +150,7 @@ main {
             }   
             img {
                 height: 140px;
-                width: 44vw;
+                width: 42vw;
                 padding: 10px;
                 object-fit:cover;
                 object-position: center;
@@ -166,6 +166,21 @@ main {
             }  
         } 
     }
+
+    .main-product-furniture {
+        @extend .main-product-healthcare;
+        h2 {
+            font-size: 2.4rem;
+            font-family: $font-secondary;
+            color: $primary-text-color;
+            padding-bottom: 20px;
+            }
+        .product-card-furniture{
+            @extend .product-card-healthcare;
+            background-color: $tertiary-color;
+        }
+    }
+        
 }
 
         
