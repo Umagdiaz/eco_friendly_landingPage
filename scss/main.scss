@@ -1,6 +1,6 @@
 $primary-color:#FFF7D6;
-$secundary-color:#CFC189;
-$tertiary-color:#CBE59E ;
+$secundary-color:#cabf95;
+$tertiary-color:#b3c98a ;
 $primary-text-color:#555A32;
 $secondary-text-color-icons:#ffffff;
 $details-color-other: #463B0C;
@@ -49,45 +49,58 @@ nav{
 main {
     width: 100%;
     height: auto;
+
     .main-header {
         display: flex;
+        flex-direction: column;
         padding: 0px 25px 0px 25px;
         margin-bottom: 50px;
-        gap: 10px;
         
-    }
+    
         .main-header-text{
             color: $primary-text-color;
-            width: 60%;
+            width: 100%;
             display: flex;
             flex-direction: column;
-        }
+            margin-top: 25px;
+           
             h1{
-                font-size: 3.2rem;
+                font-size: 2.8rem;
                 font-family: $font-secondary;
                 margin-bottom: 25px;
             }
             p{
                 font-size: $paragraph-size;
+                line-height: 1.4rem;
                 line-height: 1.8rem;
                 margin-bottom: 25px;
+                padding: 0px;
             }
             button{
                 display: flex;
-                font-size: 1.4rem;
-                padding: 15px 30px 15px 30px;
+                justify-content: center;
+                align-items: center;
                 background-color: $details-color-other;
                 border-radius: 16px;
-                color: $secondary-text-color-icons;
-                text-align: center;
                 border-style: none;
                 width: 160px;
                 height: auto;
-                justify-content: center;
-            }
-
+                margin: 0 auto;
+                p{
+                    display: flex;
+                    text-align: center;
+                    justify-content: center;
+                    justify-items: center;
+                    font-size: 1.4rem;
+                    color: $secondary-text-color-icons;
+                    padding: 15px 25px 15px 25px;
+                    margin: 0px;
+                }
+            }    
+        }
+    }
         .main-header-img{
-            width: 40%;
+            width: 100%;
             height: 320px;
             background-image: url('/assets/img/main-2.jpg');
             background-size:cover;
@@ -97,8 +110,73 @@ main {
         }   
 }
 
+.main-product{
+    width: 100%;
+    height: auto;
+    padding: 0px 20px 40px 20px;
+
+    .main-product-healthcare {
+        padding-bottom: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+        h2 {
+            font-size: 2.4rem;
+            font-family: $font-secondary;
+            color: $primary-text-color;
+            padding-bottom: 20px;
+        }
+
+        .product-card-healthcare{
+            width: 48%;
+            min-width: 130px;
+            height: auto;
+            background-color: $secundary-color;
+            border-radius: 8px;
+            color: $secondary-text-color-icons;
+            box-shadow: 0px 7px 22px -3px rgba(202,191,149,1);
+            margin-bottom:10px;
+        }
+
+        svg {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;  
+        }
+
+        svg path {
+            stroke: $secondary-text-color-icons; 
+        }      
+    }
+
+        img {
+            width: 100%;
+            padding: 0px 20px 10px 20px;
+            background-image: cover;
+            border-radius: 6px;
+            }
+        h3 {
+            font-size: 1.2rem;
+            padding:0px 20px 4px 20px;
+            }
+        p {
+            font-size: 1rem;
+            padding:0px 20px 10px 20px;
+            }
+
+.main-info{
+    padding: 0px 25px 40px 25px;
+
+    .main-info-aboutus{
+        padding-bottom: 40px;
+    }
+}
+
 footer {
     background-color: $details-color-other;
     width: 100%;
-    height: 250px;
+    height: 150px;
+    padding: 25px 25px 0px 25px;
+    color:$secondary-text-color-icons;
 }
