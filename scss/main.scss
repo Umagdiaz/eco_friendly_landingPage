@@ -100,6 +100,9 @@ main {
                 width: 160px;
                 height: auto;
                 margin: 0 auto;
+                &:hover{
+                    transform: scale(1.1);
+                }
                 p{
                     display: flex;
                     text-align: center;
@@ -209,7 +212,7 @@ main {
     color: $primary-text-color;
     padding-bottom: 60px;
    }
-   .main-info-mision_vision{
+   .main-info-mission_vision{
     @include flexCenter(column, space-evenly ,center );
 
     .info-aboutus-rigth{
@@ -235,17 +238,81 @@ main {
         }
     }
 
+    .main-info-gallery{
+        margin-bottom: 60px;
+        .gallery-img {
+            @include flexCenter(column, space-evenly ,center);
+
+            img{
+                height: 330px;
+                width: 80%;;
+                min-width: 220px;
+                object-fit: cover;
+                border-radius: 12px;
+                margin-bottom: 25px;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+           
+        }
+    }
+  
+
     .info-aboutus-left{
         @extend .info-aboutus-rigth
     }
 }
+.main-info-location{
+    color: $details-color-other;
+    margin-bottom: 30px;
 
+    p:first-of-type{
+        font-size: 2rem;
+        margin-top: 10px;
+        padding-bottom: 5px;
+    }
 
+    p{
+        padding-left: 20px;
+        font-size: $paragraph-size;
+    }
+    .info-location-map{
+        @include flexCenter(row,center ,center );
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+}
 
 footer {
     background-color: $details-color-other;
     width: 100%;
     height: 150px;
     padding: 25px 25px 0px 25px;
-    color:$secondary-text-color-icons;
+    display: flex;
+    flex-direction: column;
+    .footer-text{
+        color:$secondary-text-color-icons;
+        font-size: 1.2rem;
+        p:first-of-type{
+            font-size: 2rem;
+            margin-top: 10px;
+            padding-bottom: 5px;
+        }
+    }
+
+    .footer-social-media{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 30px; 
+        img{
+        width: 30px;
+        height: 30px;
+        margin: 0 10px 0px 10px;
+        
+    }
+}
 }
