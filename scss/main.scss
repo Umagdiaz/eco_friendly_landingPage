@@ -8,6 +8,20 @@ $paragraph-size: 1.6rem;
 $font-primary: 'IBM Plex Sans' , sans-serif;
 $font-secondary: 'Raleway', sans-serif;
 
+@mixin flexCenter($direction, $content, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $content;
+    align-items: $align;
+}
+
+@mixin buttonStyle{
+    button {
+        background: none;
+        border-style: none;
+    }
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -149,7 +163,7 @@ main {
             stroke: $secondary-text-color-icons; 
             }   
             img {
-                height: 140px;
+                height: 230px;
                 width: 42vw;
                 padding: 10px;
                 object-fit:cover;
@@ -170,6 +184,7 @@ main {
     .main-product-furniture {
         @extend .main-product-healthcare;
         h2 {
+            
             font-size: 2.4rem;
             font-family: $font-secondary;
             color: $primary-text-color;
@@ -185,12 +200,47 @@ main {
         
 
 .main-info{
-    padding: 0px 25px 40px 25px;
+   @extend .main-product-healthcare;
+  
+   h3{
+    font-size: 2.4rem;
+    padding-left: 20px;
+    font-family: $font-secondary;
+    color: $primary-text-color;
+    padding-bottom: 60px;
+   }
+   .main-info-mision_vision{
+    @include flexCenter(column, space-evenly ,center );
 
-    .main-info-aboutus{
-        padding-bottom: 40px;
+    .info-aboutus-rigth{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        color:$details-color-other;
+        padding-bottom: 30px;
+        img{ 
+            display: flex;
+            align-items: center;
+            align-content: center;
+            height: 80px;
+            width: 80px;
+            margin: 0 auto;     
+            margin-bottom: 10px;    
+            }   
+         p{
+            font-size: $paragraph-size;
+            text-align: center;
+            padding: 0px 80px 0px 80px;
+         }   
+        }
+    }
+
+    .info-aboutus-left{
+        @extend .info-aboutus-rigth
     }
 }
+
+
 
 footer {
     background-color: $details-color-other;

@@ -106,13 +106,13 @@ main .main-header-img {
   color: #555A32;
   padding-bottom: 20px;
 }
-.main-product .main-product-healthcare, .main-product .main-product-furniture {
+.main-product .main-product-healthcare, .main-product .main-info, .main-product .main-product-furniture {
   padding-bottom: 40px;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
-.main-product .main-product-healthcare .product-card-healthcare, .main-product .main-product-furniture .product-card-healthcare, .main-product .main-product-furniture .product-card-furniture {
+.main-product .main-product-healthcare .product-card-healthcare, .main-product .main-info .product-card-healthcare, .main-product .main-product-furniture .product-card-healthcare, .main-product .main-product-furniture .product-card-furniture {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -125,16 +125,16 @@ main .main-header-img {
   box-shadow: 0px 7px 22px -3px rgb(202, 191, 149);
   margin-bottom: 10px;
 }
-.main-product .main-product-healthcare .product-card-healthcare svg, .main-product .main-product-furniture .product-card-healthcare svg, .main-product .main-product-furniture .product-card-furniture svg {
+.main-product .main-product-healthcare .product-card-healthcare svg, .main-product .main-info .product-card-healthcare svg, .main-product .main-product-furniture .product-card-healthcare svg, .main-product .main-product-furniture .product-card-furniture svg {
   justify-self: flex-end;
   margin-left: auto;
   padding: 3px;
 }
-.main-product .main-product-healthcare .product-card-healthcare svg path, .main-product .main-product-furniture .product-card-healthcare svg path, .main-product .main-product-furniture .product-card-furniture svg path {
+.main-product .main-product-healthcare .product-card-healthcare svg path, .main-product .main-info .product-card-healthcare svg path, .main-product .main-product-furniture .product-card-healthcare svg path, .main-product .main-product-furniture .product-card-furniture svg path {
   stroke: #ffffff;
 }
-.main-product .main-product-healthcare .product-card-healthcare img, .main-product .main-product-furniture .product-card-healthcare img, .main-product .main-product-furniture .product-card-furniture img {
-  height: 140px;
+.main-product .main-product-healthcare .product-card-healthcare img, .main-product .main-info .product-card-healthcare img, .main-product .main-product-furniture .product-card-healthcare img, .main-product .main-product-furniture .product-card-furniture img {
+  height: 230px;
   width: 42vw;
   padding: 10px;
   -o-object-fit: cover;
@@ -143,11 +143,11 @@ main .main-header-img {
      object-position: center;
   border-radius: 12px;
 }
-.main-product .main-product-healthcare .product-card-healthcare h3, .main-product .main-product-furniture .product-card-healthcare h3, .main-product .main-product-furniture .product-card-furniture h3 {
+.main-product .main-product-healthcare .product-card-healthcare h3, .main-product .main-info .product-card-healthcare h3, .main-product .main-product-furniture .product-card-healthcare h3, .main-product .main-product-furniture .product-card-furniture h3 {
   font-size: 1.2rem;
   padding: 0px 10px 4px 10px;
 }
-.main-product .main-product-healthcare .product-card-healthcare p, .main-product .main-product-furniture .product-card-healthcare p, .main-product .main-product-furniture .product-card-furniture p {
+.main-product .main-product-healthcare .product-card-healthcare p, .main-product .main-info .product-card-healthcare p, .main-product .main-product-furniture .product-card-healthcare p, .main-product .main-product-furniture .product-card-furniture p {
   font-size: 1rem;
   padding: 0px 10px 10px 10px;
 }
@@ -161,13 +161,40 @@ main .main-header-img {
   background-color: #b3c98a;
 }
 
-.main-info {
-  padding: 0px 25px 40px 25px;
+.main-info h3 {
+  font-size: 2.4rem;
+  padding-left: 20px;
+  font-family: "Raleway", sans-serif;
+  color: #555A32;
+  padding-bottom: 60px;
 }
-.main-info .main-info-aboutus {
-  padding-bottom: 40px;
+.main-info .main-info-mision_vision {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
-
+.main-info .main-info-mision_vision .info-aboutus-rigth, .main-info .main-info-mision_vision .info-aboutus-left {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: #463B0C;
+  padding-bottom: 30px;
+}
+.main-info .main-info-mision_vision .info-aboutus-rigth img, .main-info .main-info-mision_vision .info-aboutus-left img {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  height: 80px;
+  width: 80px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.main-info .main-info-mision_vision .info-aboutus-rigth p, .main-info .main-info-mision_vision .info-aboutus-left p {
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 0px 80px 0px 80px;
+}
 footer {
   background-color: #463B0C;
   width: 100%;
