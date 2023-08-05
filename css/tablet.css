@@ -32,15 +32,11 @@
     justify-content: space-between;
   }
   main .main-header .main-header-text h1 {
-    font-size: 2.8rem;
-    font-family: "Raleway", sans-serif;
-    margin-bottom: 25px;
+    font-size: 3rem;
   }
   main .main-header .main-header-text p {
-    font-size: 1.6rem;
-    line-height: 1.4rem;
-    line-height: 1.8rem;
-    margin-bottom: 25px;
+    font-size: 1.8rem;
+    line-height: 2rem;
     padding: 0px;
   }
   main .main-header .main-header-text button:hover {
@@ -51,5 +47,54 @@
   }
   main .main-header-img {
     width: 50%;
+  }
+  .main-product {
+    width: 100%;
+    height: auto;
+    padding: 0px 20px 40px 20px;
+  }
+  .main-product h2 {
+    font-size: 3rem;
+  }
+  .main-product .main-product-healthcare {
+    gap: 40px;
+    align-content: center;
+    justify-content: center;
+  }
+  .main-product .main-product-healthcare .product-card-healthcare {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    min-width: 290px;
+    height: auto;
+    border-radius: 8px;
+  }
+  .main-product .main-product-healthcare .product-card-healthcare svg {
+    margin-left: auto;
+    width: 40px;
+    height: 40px;
+    padding: 10px 20px 10px 0px;
+  }
+  .main-product .main-product-healthcare .product-card-healthcare .card-healthcare-img {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-product .main-product-healthcare .product-card-healthcare .card-healthcare-img img {
+    height: 300px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    margin: 5px 20px 5px 20px;
+    padding: 0px;
+  }
+  .main-product .main-product-healthcare .product-card-healthcare h3 {
+    font-size: 1.8rem;
+    padding: 10px 10px 8px 10px;
+  }
+  .main-product .main-product-healthcare .product-card-healthcare p {
+    font-size: 1.6rem;
+    padding: 0px 10px 20px 10px;
   }
 }/*# sourceMappingURL=tablet.css.map */
