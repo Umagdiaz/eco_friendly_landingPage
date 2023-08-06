@@ -6,7 +6,7 @@ $tertiary-color:#b3c98a ;
 $primary-text-color:#555A32;
 $secondary-text-color-icons:#ffffff;
 $details-color-other: #463B0C;
-$paragraph-size: 1.8rem;
+$paragraph-size: 2rem;
 $font-primary: 'IBM Plex Sans' , sans-serif;
 $font-secondary: 'Raleway', sans-serif;
 
@@ -64,12 +64,12 @@ html {
                 justify-content: space-between;
         
                 h1{
-                    font-size: 3rem;
+                    font-size: 3.2rem;
                 }
 
                 p{
                     font-size: $paragraph-size;
-                    line-height: 2rem;
+                    line-height: 2.4rem;
                     padding: 0px;
                 }
                 button{
@@ -88,14 +88,15 @@ html {
     }
 
     .main-product{
-        width: 100%;
-        height: auto;
         padding: 0px 20px 40px 20px;
         h2 {
-            font-size: 3rem;
+            font-size: 3.2rem;
         }
     
         .main-product-healthcare {
+            padding-bottom: 40px;
+            display: flex;
+            flex-wrap: wrap;
             gap: 40px;
             align-content: center;
             justify-content: center;
@@ -104,11 +105,11 @@ html {
                 display: flex;
                 flex-direction: column;
                 width: 40%;
-                min-width: 290px;
-                height: auto;
-                border-radius: 8px;
+                min-width: 280px;
+                margin-bottom:20px;
             
                 svg {
+                justify-self: flex-end;  
                 margin-left: auto;
                 width: 40px;
                 height: 40px;
@@ -131,14 +132,31 @@ html {
                 }
               
                 h3 {
-                    font-size: 1.8rem;
+                    font-size: 2rem;
                     padding:10px 10px 8px 10px;
                 }
                 p {
-                    font-size: 1.6rem;
+                    font-size: 1.8rem;
                     padding:0px 10px 20px 10px;
                 }  
             } 
+        }
+
+        h2 {
+            font-size: 3.2rem;
+            }
+
+        .main-product-furniture {
+            @extend .main-product-healthcare;
+            
+            .product-card-furniture{
+                @extend .product-card-healthcare;
+                background-color: $tertiary-color;
+            }
+
+            .card-furniture-img{
+                @extend .card-healthcare-img;
+            }
         }
     }
 }
