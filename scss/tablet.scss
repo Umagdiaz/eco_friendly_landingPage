@@ -159,4 +159,67 @@ html {
             }
         }
     }
+
+    .main-info {
+        @extend .main-product-healthcare;
+
+        h3{
+            font-size: 3.2rem;
+        }
+
+        .main-info-mission_vision{
+            @include flexCenter(column, space-evenly ,center );
+        
+            .info-aboutus-rigth{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                
+                img{ 
+                    display: flex;
+                    align-items: center;
+                    align-content: center;
+                    height: 140px;
+                    width: 140px;
+                       
+                    }   
+                 p{
+                    font-size: $paragraph-size;
+                    margin-bottom: 40px;
+                 }   
+            }
+
+            .info-aboutus-left{
+                @extend .info-aboutus-rigth;
+            }
+        }
+    }
+
+    footer {
+        height: 220px;
+        display: flex;
+        .footer-text{
+            font-size: 1.6rem;
+            p:first-of-type{
+                font-size: 2.4rem;
+                margin-top: 10px;
+                padding-bottom: 5px;
+            }
+        }
+    
+        .footer-social-media{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 60px; 
+            img{
+            width: 30px;
+            height: 30px;
+            margin: 0 30px 0px 30px;
+            
+        }
+    }
+    }
+    
+    
 }
