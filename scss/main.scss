@@ -22,6 +22,11 @@ $font-secondary: 'Raleway', sans-serif;
     }
 }
 
+@mixin transparent {
+    opacity: 0;
+    font-size: 100px;   
+} 
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -37,13 +42,15 @@ html {
 
 nav{
     width: 100%;
-    height: 80px;
+    height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: $primary-text-color;
-    border-bottom: 1px solid $primary-text-color;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
+    z-index: 3;
+    animation-delay: 0.20s;
+
     P{
         font-size: 1.8rem;
         padding-left: 30px;
@@ -52,7 +59,7 @@ nav{
     .navbar-icons{
         display: flex;
         gap: 15px;
-        padding-right: 30px;
+        padding-right: 60px;
         buttom{
             background: none;
             border-style: none;  
@@ -60,70 +67,113 @@ nav{
     } 
 }
 
+.redHeart {
+    fill: red !important;
+}
+
+@keyframes show {
+    from {
+        opacity: 0%;
+        scale: 25%;
+    }
+
+    to {
+		opacity: 1;
+		scale: 100%;
+	}
+}
+
+.product-card-healthcare {
+	view-timeline-name: --image;
+	view-timeline-axis: block;
+
+	animation-timeline: --image;
+	animation-name: show;
+
+	animation-range: entry 25% cover 50%;
+	animation-fill-mode: both;
+}
+
+.icon__menu {
+    fill: $primary-text-color; 
+    position: fixed;
+    top: 35px;
+    right: 15px;
+    z-index: 100;  
+}
+
+.navbar__menu :hover {
+    fill: $tertiary-color ; 
+}
+
+
 main {
     width: 100%;
     height: auto;
+
 
     .main-header {
         display: flex;
         flex-direction: column;
         padding: 0px 25px 0px 25px;
         margin-bottom: 50px;
-        
-    
-        .main-header-text{
-            color: $primary-text-color;
-            width: 100%;
+        z-index: 1;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+
+        p.first_paragraph{
             display: flex;
             flex-direction: column;
-            margin-top: 25px;
-           
-            h1{
-                font-size: 2.8rem;
-                font-family: $font-secondary;
-                margin-bottom: 25px;
-            }
-            p{
-                font-size: $paragraph-size;
-                line-height: 1.8rem;
-                margin-bottom: 25px;
-                padding: 0px;
-            }
-            button{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background-color: $details-color-other;
-                border-radius: 16px;
-                border-style: none;
-                width: 160px;
-                height: auto;
-                margin: 0 auto;
-                &:hover{
-                    transform: scale(1.1);
-                }
-                p{
-                    display: flex;
-                    text-align: center;
-                    justify-content: center;
-                    justify-items: center;
-                    font-size: 1.4rem;
-                    color: $secondary-text-color-icons;
-                    padding: 15px 25px 15px 25px;
-                    margin: 0px;
-                }
-            }    
+            font-size: 60px;
+            line-height: 5.6rem;
+            align-content: center;
+            align-items: stretch;
+            justify-content: center;
+            margin-bottom: 25px;
+            padding: 0px;
+            margin: 0px 90px;
+            text-wrap: pretty;
         }
-    }
+
         .main-header-img{
+            display: flex;
+            flex-direction: column;
             width: 100%;
-            height: 320px;
+            height: 500px;
             background-image: url('/assets/img/main-2.jpg');
             background-size:cover;
-            background-position: center;
+            background-position:center;
             background-repeat:no-repeat;
-            border-radius: 16px;
-        }   
+            border-radius: 36px;
+            position: relative;
+            margin-top: 30px;
+        }
+
+        .transparent_1 {
+            @include transparent();
+            margin-top: -55%;
+            animation-delay: 0.4s; 
+        } 
+
+        .transparent_2 {
+            @include transparent();
+            margin-top: -45%;
+            animation-delay: 0.5s; 
+        } 
+
+        .transparent_3 {
+            @include transparent();
+            margin-top: -34%;
+            animation-delay: 0.3s;   
+        } 
+
+        .transparent_4 {
+            @include transparent();
+            margin-top: -24%;
+            animation-delay: 0.6s;  
+        } 
+    }     
 }
 
 .main-product{
@@ -156,7 +206,6 @@ main {
             margin-bottom:10px;
         
             svg {
-           
             justify-self: flex-end;  
             margin-left: auto;
             padding: 3px;
@@ -197,9 +246,45 @@ main {
             background-color: $tertiary-color;
         }
     }      
+
 }
 
-        
+.title_deco{
+    position: relative;
+    width: auto;
+    height: auto;
+    z-index: 1;
+}
+
+div.background-color_1{
+    position: absolute;
+    background-color: #555A32;
+    width: 350px;
+    height: 50px;
+    z-index: 20;
+}
+
+div.background-color_2{
+    position: absolute;
+    background-color: #555A32;
+    width: 350px;
+    height: 50px;
+    z-index: 20;
+}
+
+.backgraund__animated {
+    animation: reduceWidth 1.5s forwards;
+    transition: ease-in-out;
+}
+
+@keyframes reduceWidth {
+    0% {
+        width: 350px;
+    }
+    100% {
+        width: 0%;
+    }
+}
 
 .main-info{
    @extend .main-product-healthcare;
@@ -211,6 +296,16 @@ main {
     color: $primary-text-color;
     padding-bottom: 60px;
    }
+
+   .ecology_icon, .earth_icon{
+    opacity: 0;
+    animation-delay: 0.5s; 
+    }
+
+    .ecology_icon.animate__animated, .earth_icon.animate__animated{
+    opacity: 1;
+    }
+
    .main-info-mission_vision{
     @include flexCenter(column, space-evenly ,center );
 
@@ -227,7 +322,8 @@ main {
             height: 80px;
             width: 80px;
             margin: 0 auto;     
-            margin-bottom: 10px;    
+            margin-bottom: 10px;  
+           
             }   
          p{
             font-size: $paragraph-size;
@@ -251,6 +347,7 @@ main {
                 margin-bottom: 25px;
                 &:hover{
                     transform: scale(1.1);
+
                 }
             }
            
@@ -307,11 +404,10 @@ footer {
         flex-direction: row;
         justify-content: center;
         margin-top: 30px; 
-        img{
-        width: 30px;
-        height: 30px;
-        margin: 0 10px 0px 10px;
-        
+            img{
+            width: 30px;
+            height: 30px;
+            margin: 0 10px 0px 10px;
+        }
     }
-}
 }
