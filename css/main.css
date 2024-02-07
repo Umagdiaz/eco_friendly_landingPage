@@ -21,7 +21,7 @@ nav {
   z-index: 3;
   animation-delay: 0.2s;
 }
-nav P {
+nav h1 {
   font-size: 3.6rem;
   padding-left: 30px;
   font-weight: 500;
@@ -154,7 +154,7 @@ main .main-header .transparent_4 {
   padding: 0px 20px 40px 20px;
 }
 .main-product h2 {
-  font-size: 2.4rem;
+  font-size: 3.2rem;
   font-family: "Raleway", sans-serif;
   color: #555A32;
   padding-bottom: 20px;
@@ -163,12 +163,11 @@ main .main-header .transparent_4 {
   padding-bottom: 40px;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 40px;
 }
 .main-product .main-product-healthcare .product-card-healthcare, .main-product .main-info .product-card-healthcare, .main-product .main-product-furniture .product-card-healthcare, .main-product .main-product-furniture .product-card-furniture {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   width: 48%;
   min-width: 130px;
   height: auto;
@@ -181,39 +180,46 @@ main .main-header .transparent_4 {
 .main-product .main-product-healthcare .product-card-healthcare svg, .main-product .main-info .product-card-healthcare svg, .main-product .main-product-furniture .product-card-healthcare svg, .main-product .main-product-furniture .product-card-furniture svg {
   justify-self: flex-end;
   margin-left: auto;
-  padding: 3px;
+  width: 50px;
+  height: 50px;
+  padding: 10px 20px 10px 0px;
 }
 .main-product .main-product-healthcare .product-card-healthcare svg path, .main-product .main-info .product-card-healthcare svg path, .main-product .main-product-furniture .product-card-healthcare svg path, .main-product .main-product-furniture .product-card-furniture svg path {
   stroke: #ffffff;
 }
-.main-product .main-product-healthcare .product-card-healthcare img, .main-product .main-info .product-card-healthcare img, .main-product .main-product-furniture .product-card-healthcare img, .main-product .main-product-furniture .product-card-furniture img {
-  height: 230px;
+.main-product .main-product-healthcare .product-card-healthcare .card-healthcare-img, .main-product .main-info .product-card-healthcare .card-healthcare-img, .main-product .main-product-furniture .product-card-healthcare .card-healthcare-img, .main-product .main-product-furniture .product-card-furniture .card-healthcare-img, .main-product .main-product-furniture .product-card-furniture .card-furniture-img {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.main-product .main-product-healthcare .product-card-healthcare .card-healthcare-img img, .main-product .main-info .product-card-healthcare .card-healthcare-img img, .main-product .main-product-furniture .product-card-healthcare .card-healthcare-img img, .main-product .main-product-furniture .product-card-furniture .card-healthcare-img img, .main-product .main-product-furniture .product-card-furniture .card-furniture-img img {
+  display: flex;
+  height: 500px;
   width: 42vw;
-  padding: 10px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+  align-items: center;
   border-radius: 12px;
 }
 .main-product .main-product-healthcare .product-card-healthcare h3, .main-product .main-info .product-card-healthcare h3, .main-product .main-product-furniture .product-card-healthcare h3, .main-product .main-product-furniture .product-card-furniture h3 {
-  font-size: 1.2rem;
-  padding: 0px 10px 4px 10px;
+  font-size: 2rem;
+  padding: 10px 10px 8px 10px;
+  justify-self: flex-start;
 }
 .main-product .main-product-healthcare .product-card-healthcare p, .main-product .main-info .product-card-healthcare p, .main-product .main-product-furniture .product-card-healthcare p, .main-product .main-product-furniture .product-card-furniture p {
-  font-size: 1rem;
-  padding: 0px 10px 10px 10px;
+  font-size: 1.8rem;
+  justify-self: flex-start;
+  padding: 0px 10px 20px 10px;
 }
 .main-product .main-product-furniture h2 {
-  font-size: 2.4rem;
-  font-family: "Raleway", sans-serif;
   color: #555A32;
-  padding-bottom: 20px;
 }
 .main-product .main-product-furniture .product-card-furniture {
   background-color: #b3c98a;
 }
-
 .title_deco {
   position: relative;
   width: auto;
@@ -250,7 +256,7 @@ div.background-color_2 {
     width: 0%;
   }
 }
-.main-info h3 {
+.main-info h2, .main-info h4 {
   font-size: 2.4rem;
   padding-left: 20px;
   font-family: "Raleway", sans-serif;

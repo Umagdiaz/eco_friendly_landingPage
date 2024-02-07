@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 577px) and (max-width: 800px) {
   * {
     box-sizing: border-box;
     margin: 0;
@@ -76,14 +76,8 @@
   .main-product {
     padding: 0px 20px 40px 20px;
   }
-  .main-product h2 {
-    font-size: 3.2rem;
-  }
   .main-product .main-product-healthcare, .main-product .main-info, .main-product .main-product-furniture {
     padding-bottom: 40px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
     align-content: center;
     justify-content: center;
   }
@@ -101,15 +95,8 @@
     height: 40px;
     padding: 10px 20px 10px 0px;
   }
-  .main-product .main-product-healthcare .product-card-healthcare .card-healthcare-img, .main-product .main-info .product-card-healthcare .card-healthcare-img, .main-product .main-product-healthcare .product-card-healthcare .main-product-furniture .card-furniture-img, .main-product .main-info .product-card-healthcare .main-product-furniture .card-furniture-img, .main-product .main-product-furniture .product-card-healthcare .card-healthcare-img, .main-product .main-product-furniture .product-card-healthcare .card-furniture-img, .main-product .main-product-furniture .product-card-furniture .card-healthcare-img, .main-product .main-product-furniture .product-card-furniture .card-furniture-img {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-  }
   .main-product .main-product-healthcare .product-card-healthcare .card-healthcare-img img, .main-product .main-info .product-card-healthcare .card-healthcare-img img, .main-product .main-product-healthcare .product-card-healthcare .main-product-furniture .card-furniture-img img, .main-product .main-info .product-card-healthcare .main-product-furniture .card-furniture-img img, .main-product .main-product-furniture .product-card-healthcare .card-healthcare-img img, .main-product .main-product-furniture .product-card-healthcare .card-furniture-img img, .main-product .main-product-furniture .product-card-furniture .card-healthcare-img img, .main-product .main-product-furniture .product-card-furniture .card-furniture-img img {
     height: 300px;
-    border-radius: 16px;
     display: flex;
     align-items: center;
     margin: 5px 20px 5px 20px;

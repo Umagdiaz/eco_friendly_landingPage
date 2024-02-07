@@ -52,7 +52,7 @@ nav{
     z-index: 3;
     animation-delay: 0.20s;
 
-    P{
+    h1{
         font-size: 3.6rem;
         padding-left: 30px;
         font-weight: 500;
@@ -192,8 +192,9 @@ main {
     width: 100%;
     height: auto;
     padding: 0px 20px 40px 20px;
+    
     h2 {
-        font-size: 2.4rem;
+        font-size: 3.2rem;
         font-family: $font-secondary;
         color: $primary-text-color;
         padding-bottom: 20px;
@@ -203,11 +204,11 @@ main {
         padding-bottom: 40px;
         display: flex;
         flex-wrap: wrap;
-        gap: 10px;
+        gap: 40px;
+
         .product-card-healthcare{
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
             width: 48%;
             min-width: 130px;
             height: auto;
@@ -220,42 +221,56 @@ main {
             svg {
             justify-self: flex-end;  
             margin-left: auto;
-            padding: 3px;
+            width: 50px;
+            height: 50px;
+            padding: 10px 20px 10px 0px;
             }
              svg path {
             stroke: $secondary-text-color-icons; 
-            }   
-            img {
-                height: 230px;
-                width: 42vw;
-                padding: 10px;
-                object-fit:cover;
-                object-position: center;
-                border-radius: 12px;
+            } 
+
+            .card-healthcare-img{
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    display:flex;
+                    height: 500px;
+                    width: 42vw;
+                    object-fit:cover;
+                    object-position: center;
+                    align-items: center;
+                    border-radius: 12px;
+                }   
             }
             h3 {
-                font-size: 1.2rem;
-                padding:0px 10px 4px 10px;
+                font-size: 2rem;
+                padding:10px 10px 8px 10px;
+                justify-self: flex-start;  
             }
             p {
-                font-size: 1rem;
-                padding:0px 10px 10px 10px;
+                font-size: 1.8rem;
+                justify-self: flex-start;  
+                padding:0px 10px 20px 10px;
             }  
         } 
     }
 
     .main-product-furniture {
         @extend .main-product-healthcare;
-        h2 {
-            
-            font-size: 2.4rem;
-            font-family: $font-secondary;
+        h2 {    
             color: $primary-text-color;
-            padding-bottom: 20px;
             }
         .product-card-furniture{
             @extend .product-card-healthcare;
             background-color: $tertiary-color;
+        
+        .card-furniture-img{
+            @extend .card-healthcare-img
+        }
+            
         }
     }      
 
@@ -301,7 +316,7 @@ div.background-color_2{
 .main-info{
    @extend .main-product-healthcare;
   
-   h3{
+   h2, h4{
     font-size: 2.4rem;
     padding-left: 20px;
     font-family: $font-secondary;
