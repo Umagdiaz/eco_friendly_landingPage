@@ -53,7 +53,7 @@ $(document).ready(function () {
 
       $(".background-color_2").waypoint(function () {
         $(".background-color_2").addClass("backgraund__animated");
-      }, {offset: "80%"})
+      }, {offset: "90%"})
 
     $(".icon_heart").on("click", function() {
         $(this).find("path").toggleClass("redHeart");

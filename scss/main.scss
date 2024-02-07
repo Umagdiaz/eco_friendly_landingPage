@@ -24,7 +24,8 @@ $font-secondary: 'Raleway', sans-serif;
 
 @mixin transparent {
     opacity: 0;
-    font-size: 100px;   
+    font-size: 100px;
+    margin-left: 30vw;   
 } 
 
 * {
@@ -52,7 +53,7 @@ nav{
     animation-delay: 0.20s;
 
     P{
-        font-size: 1.8rem;
+        font-size: 3.6rem;
         padding-left: 30px;
         font-weight: 500;
     }
@@ -121,6 +122,7 @@ main {
         flex-wrap: wrap;
         align-content: center;
         justify-content: center;
+       
 
         p.first_paragraph{
             display: flex;
@@ -134,6 +136,15 @@ main {
             padding: 0px;
             margin: 0px 90px;
             text-wrap: pretty;
+        }
+
+        .main-header-text{
+            color: $primary-text-color;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            margin-top: 0px;
+            justify-content: space-between;
         }
 
         .main-header-img{
@@ -152,25 +163,26 @@ main {
 
         .transparent_1 {
             @include transparent();
-            margin-top: -55%;
+            margin-top: -45%;
             animation-delay: 0.4s; 
+            
         } 
 
         .transparent_2 {
             @include transparent();
-            margin-top: -45%;
+            margin-top: -30%;
             animation-delay: 0.5s; 
         } 
 
         .transparent_3 {
             @include transparent();
-            margin-top: -34%;
+            margin-top: -15%;
             animation-delay: 0.3s;   
         } 
 
         .transparent_4 {
             @include transparent();
-            margin-top: -24%;
+            margin-top: -5%;
             animation-delay: 0.6s;  
         } 
     }     

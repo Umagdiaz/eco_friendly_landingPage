@@ -1,4 +1,4 @@
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
 
 $primary-color:#FFF7D6;
 $secundary-color:#e2cb6d;
@@ -24,6 +24,14 @@ $font-secondary: 'Raleway', sans-serif;
     }
 }
 
+@mixin transparent {
+    opacity: 0;
+    font-size: 80px;  
+    align-items: center;
+    justify-content: center; 
+    margin-left: -5vw;  
+} 
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -38,6 +46,8 @@ html {
 }
  
     nav{
+        margin-bottom: 15px;
+
         P{
             font-size: 2.8rem;
             
@@ -54,33 +64,40 @@ html {
             padding: 0px 25px 0px 25px;
             margin-bottom: 50px;
             gap: 25px;
-            
-            .main-header-text{
-                color: $primary-text-color;
-                width: 50%;
-                display: flex;
-                flex-direction: column;
-                margin-top: 0px;
-                justify-content: space-between;
-        
-                h1{
-                    font-size: 3.2rem;
-                }
+         
+            p.first_paragraph {
+                font-size: 30px;
+                line-height: 1.1;
+                margin: 0px 40px;
+            }    
 
-                p{
-                    font-size: $paragraph-size;
-                    line-height: 2.4rem;
-                    padding: 0px;
-                }
-                button{
-                    &:hover{
-                        transform: scale(1.1);
-                    }
-                    p{
-                        font-size: 1.6rem;  
-                    }
-                }    
+            .main-header-img{
+                height: 350px;
             }
+
+            .transparent_1 {
+                @include transparent();
+                margin-top: -65%;
+                animation-delay: 0.4s; 
+            } 
+    
+            .transparent_2 {
+                @include transparent();
+                margin-top: -50%;
+                animation-delay: 0.5s; 
+            } 
+    
+            .transparent_3 {
+                @include transparent();
+                margin-top: -33%;
+                animation-delay: 0.3s;   
+            } 
+    
+            .transparent_4 {
+                @include transparent();
+                margin-top: -17%;
+                animation-delay: 0.6s;  
+            } 
         }
             .main-header-img{
                 width: 50%;
