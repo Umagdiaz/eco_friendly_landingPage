@@ -1,4 +1,4 @@
-# Eco & Deco store - Lanndingpage 
+# Eco & Deco store
 
 Website for e-commerce, a page to show a product catalog, information about the store, you can make a list of favorites by giving it likes, through a fully adaptable design for any devise.
 
