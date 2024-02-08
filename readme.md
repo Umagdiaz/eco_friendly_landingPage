@@ -22,9 +22,9 @@ Diferent animation using waypoint librery and animate.css
 Responsive desing for diferent views.
 
 # Screenshot  
-|    |    |    |
+|  Mobile  |  Tablet  |  Desktop  |
 |----|----|----|
-| <p align="center">Mobile<br><img src="/assets/img/readme_img/iphone_eco_Store.jpeg" alt="mobile view"></p> | <p align="center">Tablet<br><img src="/assets/img/readme_img/iPad_eco_Store.jpeg" alt="tablet view"></p> | <p align="center">Web<br><img src="/assets/img/readme_img/MacBook__eco_Store.jpeg" alt="web view"></p> |
+| <p align="center"><img src="/assets/img/readme_img/iphone_eco_Store.jpeg" alt="mobile view"></p> | <p align="center"><img src="/assets/img/readme_img/iPad_eco_Store.jpeg" alt="tablet view"></p> | <p align="center"><img src="/assets/img/readme_img/MacBook__eco_Store.jpeg" alt="web view"></p> |
 
 
 ## License
