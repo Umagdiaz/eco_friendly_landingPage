@@ -24,7 +24,7 @@ Responsive desing for diferent views.
 # Screenshot  
 |    |    |    |
 |----|----|----|
-| <p align="center"><img src="/assets/img/readme_img/iphone_eco_Store.jpeg" alt="mobile view"><br>Mobile</p> | <p align="center"><img src="/assets/img/readme_img/iPad_eco_Store.jpeg" alt="tablet view"><br>Tablet</p> | <p align="center"><img src="/assets/img/readme_img/MacBook__eco_Store.jpeg" alt="web view"><br>Web</p> |
+| <p align="center">Mobile<br><img src="/assets/img/readme_img/iphone_eco_Store.jpeg" alt="mobile view"></p> | <p align="center">Tablet<br><img src="/assets/img/readme_img/iPad_eco_Store.jpeg" alt="tablet view"></p> | <p align="center">Web<br><img src="/assets/img/readme_img/MacBook__eco_Store.jpeg" alt="web view"></p> |
 
 
 ## License
