@@ -48,7 +48,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     color: $primary-text-color;
-    margin-bottom: 70px;
+    margin-bottom: 45px;
     z-index: 3;
     animation-delay: 0.20s;
 
@@ -127,8 +127,8 @@ main {
         p.first_paragraph{
             display: flex;
             flex-direction: column;
-            font-size: 60px;
-            line-height: 5.6rem;
+            font-size: 42px;
+            line-height: 5rem;
             align-content: center;
             align-items: stretch;
             justify-content: center;
@@ -245,7 +245,7 @@ main {
                     border-radius: 12px;
                 }   
             }
-            h3 {
+            p.moving_subtitles {
                 font-size: 2rem;
                 padding:10px 10px 8px 10px;
                 justify-self: flex-start;  
@@ -316,7 +316,7 @@ div.background-color_2{
 .main-info{
    @extend .main-product-healthcare;
   
-   h2, h4{
+   h2, h3{
     font-size: 2.4rem;
     padding-left: 20px;
     font-family: $font-secondary;
