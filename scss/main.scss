@@ -197,17 +197,13 @@ main {
         padding-bottom: 20px;
     }
 
-    p.moving_subtitles {
-        font-size: 1.8rem;
-        padding:10px 10px 8px 10px;
-        justify-self: flex-start;  
-    }
-
     .main-product-healthcare {
         padding-bottom: 40px;
         display: flex;
         flex-wrap: wrap;
         gap: 40px;
+        align-items: center;
+        justify-content: center;
 
         .product-card-healthcare{
             display: flex;

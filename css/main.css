@@ -154,16 +154,13 @@ main .main-header .transparent_4 {
   color: #555A32;
   padding-bottom: 20px;
 }
-.main-product p.moving_subtitles {
-  font-size: 1.8rem;
-  padding: 10px 10px 8px 10px;
-  justify-self: flex-start;
-}
 .main-product .main-product-healthcare, .main-product .main-info, .main-product .main-product-furniture {
   padding-bottom: 40px;
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
+  align-items: center;
+  justify-content: center;
 }
 .main-product .main-product-healthcare .product-card-healthcare, .main-product .main-info .product-card-healthcare, .main-product .main-product-furniture .product-card-healthcare, .main-product .main-product-furniture .product-card-furniture {
   display: flex;
